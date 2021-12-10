@@ -1,0 +1,55 @@
+Task-1: Learn 3 new methods for strings in Python
+Method 1 
+casefold() - Converts string into lower case
+
+Example: 
+txt = "HELLO, FRIENDS!"
+
+x = txt.casefold()
+
+print(x)
+
+Method 2
+Make the lower case letters upper case and the upper case letters lower case: swapcase()
+
+Example: 
+txt = "Hello My Name Is Provakar"
+
+x = txt.swapcase()
+
+print(x)
+
+
+
+Method -3
+Split a string into a list where each word is a list item:
+Example- 
+
+txt = "Welcome to the Python class"
+
+x = txt.split()
+
+print(x)
+
+
+
+Task 2:
+Write a code to print sum of the first and the last elements in my_list
+my_list = [3, 4, 5, 6, 7, 8, 9, 10]
+
+
+Soln :
+my_list = [3, 4, 5, 6, 7, 8, 9, 10]
+x = my_list[0]
+y = my_list [-1]
+z = x + y
+print (z)
+
+
+Task 3: Write a code to convert 6th element in my_list into a string, without affecting the original list
+
+Soln: 
+my_list = [3, 4, 5, 6, 7, 8, 9, 10]
+x = str(my_list [6])
+print (x)
+print (type(x))

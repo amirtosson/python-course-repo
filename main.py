@@ -41,16 +41,26 @@ play_again_user = True
 # can be broken if the user wrote n
 while play_again_user == True:
     print("starting again")
-    my_random_number = random.randint(1,100)
+    starting_point = int(input("Enter the beginning of the range "))
+    ending_point = int(input("Enter the ending of the range "))
+
+    my_random_number = random.randint(starting_point,ending_point)
     found = False
     counter = 0
-    
+    trial_num = int(input("Enter the number of trials "))
     # the main loop to get an input from the user and check it 
     # can be broken if the user guessed the right number OR exceed the number 
     # of trials 
-    while found == False and counter < 10:
-        user_num = int(input("guess a number from 1 to 100 "))
-        if user_num > 100 or  user_num < 1:
+    while found == False and counter < trial_num:
+        print("You still have "+ str(trial_num - counter) + " trials")
+        user_num = input("guess a number from " + str(starting_point) +
+                             " to " + str(ending_point) + " or x to close ")
+        if user_num == "x":
+            break
+        else:
+            user_num = int(user_num)
+                      
+        if user_num > ending_point or  user_num < starting_point:
             print("Are you stupid. Out of range!! ")
         elif user_num == my_random_number:
             print("Bingoooo. ")
@@ -61,8 +71,9 @@ while play_again_user == True:
         else:
             print("It was too high. Please guess a smaller num ")  
         counter = counter + 1 
-        if counter == 10:
-            print("You exceed the number of trials. ")
+        if counter == trial_num and user_num != my_random_number and (trial_num - counter) == 0:
+            print("You exceed the number of trials. The number was " + str(my_random_number))
+            
     
     wrong_choice = True
     # to be sure that the user answerd with the right input

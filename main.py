@@ -11,27 +11,21 @@ name:       main
 date:       16.12.2021
 """
 
-# my array from 10 to 60
-my_arr = range(10,61)
+is_not_zero = True
+counter = 0
 
-# using for loop
-for x in my_arr:
-    if x % 2 == 0:
-        print('from for loop: ' + str(x))
+while is_not_zero == True and counter < 100:
+    x = int(input("Enter any number. If you entered 0 I will close "))  
+    if x == 0:
+        print("Zero")
+        is_not_zero = False
+    
     else:
-        print("from for loop: ODD")
+        print("other")
         
-
-u = 10
-# using while loop
-while u < 61:  
-    if u % 2 == 0:
-        print('from while loop: ' + str(u))
-    else:
-        print("from while loop: ODD")
-        
-    u = u + 1
-        
+    counter = counter + 1
+    
+    
     
     
     

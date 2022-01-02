@@ -1,0 +1,17 @@
+I used two different ways for doing the caclulations.
+
+The User will basically see the same stuff in both codes, the diferences are in the codes.
+
+The differences are found in the Basic and the Advanced classes, the Scientific class is basically the same (I had no interest in changing!) 
+
+Unlike Method1, In Method2 code (because I like it more) I managed the errors that the user can input.
+
+There is also a major difference in the output of the Advanced class; I did not understand which is required from the following:
+take this example: (1+2*3)
+1. Should I calculate the entire expression at once? If you enter  this expression in Python at once, it will evaluate the multiplication first, final result = 7
+2. Or Should I calculate step by step?:
+   add 1+2 
+   then mutiply the result by 3
+   the final result = 9
+Because I did not know what exactly is required, I did both!
+In Method1 Code I calculate step by step, Whereas in Method2 Code I calculate the entire expression at once. But in both, the user enter the same stuff. 

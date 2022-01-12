@@ -4,66 +4,6 @@ import math
 import random 
 #import turtle
 
-#simple calculator #advanced calculations
-#creating the class containg the main numbers 
-
-class calculator():
-    def __init__(self, num1, num2, num3, num4):
-        self.num1= num1
-        self.num2= num2
-        self.num3= num3
-        self.num4= num4
-
-#adding the simple mathmatical functions to the code. 
-#using 4 numbers where the user must provide them.
-    def add(self):
-        return self.num1 + self.num2 + self.num3 + self.num4
-    
-    def substract(self):
-        return self.num1 - self.num2 - self.num3 - self.num4
-    
-    def divide(self):
-        return self.num1 / self.num2 / self.num3 / self.num4
-    
-    def multiply(self):
-        return self.num1 * self.num2 * self.num3 * self.num4
-
-#defination of the operators 
-  
-    def operation(self, information):
-        if information == "+":
-            return self.add ()
-        elif information == "-":
-            return self.substract()
-        elif information == "/":
-            return self.divide()
-        elif information == "*":
-            return self.multiply()
-
-#asking the user to enter the inputs 
-
-the_input = input ("please write your values: ")
-the_input = the_input.strip().split(" ")
-
-our_input1= int (the_input[0])
-our_input2= int (the_input[2])
-our_input3= int (the_input[4])
-our_input4= int (the_input[6])
-
-operation1 = the_input [1]
-operation2 = the_input [3]
-operation3 = the_input [5]
-
-#rondom operators to be done all together in the same line.
-
-x = calculator(our_input1,our_input2,our_input3,our_input4)
-result= x.operation(operation1), x.operation(operation2), x.operation(operation3)
-
-#to run the code, it should be written in this way: 1 * 2 / 3 - 4, with keeping the spaces 
-print (result) 
-
-
-
 #then a code for running the Scientific Calculator
 
 def askForNumInput(textPrompt):

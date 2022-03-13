@@ -45,11 +45,6 @@ while u<61:
         
     u=u+1
     
-#%%%    
-
-x= int("Hi")
-
-print(type(x))
 
 
 

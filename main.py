@@ -10,7 +10,8 @@ summary:    A testing file
 name:       main
 date:       16.12.2021
 """
-
+  
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # my array from 10 to 60
 my_arr = range(10,61)
 
@@ -31,7 +32,60 @@ while u < 61:
         print("from while loop: ODD")
         
     u = u + 1
+    
+#%%%%%%%%%%%%%%%%%%%
+
+u=10
+while u<61:
+    if u%2==0:
+        print(u)
+    
+    else:
+        print("odd")
         
+    u=u+1
     
+#%%%    
+
+x= int("Hi")
+
+print(type(x))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
+        
     
